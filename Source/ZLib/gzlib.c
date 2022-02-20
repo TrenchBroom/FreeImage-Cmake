@@ -15,6 +15,12 @@
 #endif
 #endif
 
+#ifdef __APPLE__
+    #define _LARGEFILE64_SOURCE     /* See feature_test_macros(7) */
+    #include <sys/types.h>
+    #include <unistd.h>
+#endif
+
 /* Local functions */
 local void gz_reset OF((gz_statep));
 local gzFile gz_open OF((const void *, int, const char *));

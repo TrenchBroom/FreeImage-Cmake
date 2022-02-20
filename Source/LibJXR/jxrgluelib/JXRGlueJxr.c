@@ -26,6 +26,12 @@
 // POSSIBILITY OF SUCH DAMAGE.
 //
 //*@@@---@@@@******************************************************************
+
+#ifdef __APPLE__
+    #include <libkern/OSByteOrder.h>
+    #define _byteswap_ulong(x) _OSSwapInt32
+#endif
+
 #include <limits.h>
 #include <JXRGlue.h>
 
