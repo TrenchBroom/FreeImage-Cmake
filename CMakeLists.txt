@@ -573,6 +573,7 @@ else()
     add_library(FreeImage SHARED ${ALL_SRC})
 endif()
 
+target_compile_options(FreeImage PRIVATE -w)
 target_include_directories(FreeImage SYSTEM INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/Source/")
 
 
