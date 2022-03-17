@@ -557,7 +557,7 @@ include_directories(Wrapper/FreeImagePlus)
 
 
 configure_file (
-  source/config.h.in
+  Source/config.h.in
   ${PROJECT_SOURCE_DIR}/Source/config.h
 )
 
